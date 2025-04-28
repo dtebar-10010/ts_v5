@@ -54,9 +54,7 @@ nav {
 }
 
 /*.logo {*/
-
 /*}*/
-
 nav .logo {
  margin-top      : 7px;
  margin-bottom   : 11px;
@@ -64,7 +62,6 @@ nav .logo {
  display         : flex;
  justify-content : center;
  text-align      : center;
-
 }
 
 nav .logo img {
@@ -84,8 +81,8 @@ nav a {
 }
 
 nav a, nav a:active, nav a:visited {
- color : whitesmoke;
-  background-color : transparent;
+ color            : whitesmoke;
+ background-color : transparent;
 }
 
 nav a.active {
@@ -125,38 +122,65 @@ nav em {
  margin-left : 1px;
 }
 
-nav ul {
- -ms-flex-direction    : column;
- -ms-flex-pack         : distribute;
- -webkit-box-direction : normal;
- -webkit-box-orient    : vertical;
- display               : -ms-flexbox;
- display               : -webkit-box;
- display               : flex;
- flex-direction        : column;
- height                : 44vh;
- justify-content       : space-around;
- list-style            : none;
- margin-left           : 3px;
- text-align            : left;
-}
+/*nav ul {*/
+/* -ms-flex-direction    : column;*/
+/* -ms-flex-pack         : distribute;*/
+/* -webkit-box-direction : normal;*/
+/* -webkit-box-orient    : vertical;*/
+/* display               : -ms-flexbox;*/
+/* display               : -webkit-box;*/
+/* display               : flex;*/
+/* flex-direction        : column;*/
+/* height                : 44vh;*/
+/* justify-content       : space-around;*/
+/* list-style            : none;*/
+/* margin-left           : 3px;*/
+/* text-align            : left;*/
+/*}*/
 
 nav ul li {
  margin : 0px 0px;
 }
 
+/*nav ul li a {*/
+/* font-size : 17px;*/
+/*}*/
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 44vh;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 nav ul li a {
- font-size : 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
 }
 
 nav ul li i {
- width          : 23px;
- padding-bottom : 17px;
+  padding-bottom: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-text ul li a:hover i.fa {
- color :lightpink;
 
+
+/*nav ul li i {*/
+/* width          : 23px;*/
+/* padding-bottom : 17px;*/
+/*}*/
+
+.nav-text ul li a:hover i.fa {
+ color : lightpink;
 }
 
 p {
@@ -174,7 +198,6 @@ ul {
 /* list-style   : none;*/
 /* margin-right : 0px;*/
 /*}*/
-
 ul li a {
  color       : lightgray !important;
  font-weight : bold;
@@ -210,7 +233,6 @@ ul li a:visited {
 /* font-size    : 0px;*/
 /* margin-right : 0px;*/
 /*}*/
-
 #ContactForm {
  padding-left : 11px;
 }
@@ -230,7 +252,6 @@ ul li a:visited {
 /* padding-right : 0px;*/
 /* width         : 100%;*/
 /*}*/
-
 /*.container {*/
 /* margin-left   : auto;*/
 /* margin-right  : auto;*/
@@ -238,7 +259,6 @@ ul li a:visited {
 /* padding-right : 0px;*/
 /* width         : 100%;*/
 /*}*/
-
 .content::-webkit-scrollbar {
  background-color : rgba(0, 0, 0, 0.5);
  height           : 8px;
@@ -419,7 +439,6 @@ ul li a:visited {
 /* right     : 0;*/
 /* width     : 3%;*/
 /*}*/
-
 .scroll-footer {
  background-color : transparent;
  bottom           : 1%;
@@ -491,7 +510,6 @@ ul li a:visited {
  color          : gray;
  display        : inline-block;
  font-size      : 14px;
-
  font-weight    : 500;
  letter-spacing : 1px;
  margin-bottom  : 7px;
@@ -610,7 +628,6 @@ ul li a:visited {
 }
 
 .third-content .left-image img {
-
  border-radius : 11px;
 }
 
@@ -624,7 +641,6 @@ ul li a:visited {
  color          : gray;
  display        : inline-block;
  font-size      : 27px;
-
  font-weight    : 700;
  letter-spacing : 1px;
  margin-bottom  : 20px;
@@ -704,7 +720,7 @@ ul li a:visited {
 
 .swal2-confirm {
  background-color : gray !important;
- color           : lightpink;
+ color            : lightpink;
 }
 
 .swal2-html-container {
@@ -712,7 +728,7 @@ ul li a:visited {
 }
 
 .swal2-popup {
- background-color : 	#71797E;
+ background-color : #71797E;
 }
 
 .third-content {
@@ -777,7 +793,6 @@ ul li a:visited {
  color          : gray;
  display        : inline-block;
  font-size      : 27px;
-
  font-weight    : 700;
  letter-spacing : 1px;
  margin-bottom  : 20px;
@@ -804,11 +819,9 @@ ul li a:visited {
  0% {
   color : gainsboro;
  }
-
  100% {
   color : gray;
  }
-
  50% {
   color : gainsboro;
  }
@@ -844,14 +857,20 @@ ul li a:visited {
 }
 
 .left-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;               /* Set width to 75% of its parent container */
-  max-height: 50%;          /* Limit height to 75% of its parent container */
+ display  : block;
+ position : relative;
+ width    : 100%;
+ height   : auto;
+ overflow : visible;
 }
 
 .left-image img {
-  max-width: 100%;
-  max-height: 100%;
+ width      : 80%;
+ transition : transform 0.4s ease;
+}
+
+.left-image img:hover {
+ transform : scale(1.1);
+ position  : relative;
+ z-index   : 10;
 }

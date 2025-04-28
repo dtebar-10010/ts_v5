@@ -1,3 +1,4 @@
+""" doc """
 from pathlib import Path
 import os
 import dj_database_url
@@ -12,9 +13,9 @@ BASE_DIR = Path( __file__ ).resolve( ).parent.parent
 SECRET_KEY = 'django-insecure-tidaoeo@yd%m1&@m_a_cp604ibfz5)_tv!-ox23q)cgghp&3-b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [ 'tsv5.herokuapp.com', 'localhost', '127.0.0.1' ]
+ALLOWED_HOSTS = [ 'localhost', '127.0.0.1' ]
 # ALLOWED_HOSTS = [ ]
 
 # Application definition
@@ -76,7 +77,10 @@ WSGI_APPLICATION = 'ts_v5_settings.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 # Password validation
@@ -136,11 +140,20 @@ CRISPY_TEMPLATE_PACK = "bootstrap3"
 # DEFAULT_FROM_EMAIL = 'dtebar@top-quarks.com'
 
 # email configuration settings
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'dtebar@gmail.com'
+# EMAIL_HOST_PASSWORD = 'qjjw mcay bqgi vvbt'
+# EMAIL_USE_TLS = True
+# DEFAULT_FROM_EMAIL = 'dtebar@top-quarks.com'
+
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.mailgun.org'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'dtebar@gmail.com'
-EMAIL_HOST_PASSWORD = 'qjjw mcay bqgi vvbt'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'dtebar@top-quarks.com'
+EMAIL_HOST_USER = 'postmaster@sandbox83c891ec455a4bbdb7f96031912fe08c.mailgun.org'
+EMAIL_HOST_PASSWORD = 'MHarrison_21'
+DEFAULT_FROM_EMAIL = 'postmaster@sandbox83c891ec455a4bbdb7f96031912fe08c.mailgun.org'

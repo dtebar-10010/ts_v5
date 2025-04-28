@@ -40,10 +40,8 @@ def contact( request ):
 def download_resume( request ):
    file_path = 'resumes/daniel-tebar-resume-2024.pdf'
    absolute_path = settings.BASE_DIR / 'ts_v5_app/static' / file_path
-
+   
    response = FileResponse( open( absolute_path, 'rb' ), content_type = 'application/pdf' )
    response[ 'Content-Disposition' ] = 'attachment; filename="daniel-tebar-resume-2024.pdf"'
-
-   messages.success( request, "Daniel's resume [.pdf] has downloaded." )
-
+   
    return response
