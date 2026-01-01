@@ -3,7 +3,7 @@
 
 {% block content %}
 
- <nav class = 'nav-text'>
+ <nav class = 'nav-text' style = "margin-left: 27px;">
 
   <div class = "logo">
    <a href = https://github.com/dtebar-10010 target = "_blank">
@@ -60,13 +60,14 @@
 
      <div class = "col-md-3">
       <div class = "author-image">
-       <img src = "{% static 'img/author_image.jpg' %}" alt = "">
+       <img src = "{% static 'img/author_image.jpg' %}" alt = "" style = "border: 2px solid gray; border-radius: 9px;">
       </div>
      </div>
 
      <div class = "col-md-9 author-text">
       <h2>DANIEL TÉBAR</h2>
-      <p> I am an
+      <p style = "max-width: 100%; word-wrap: break-word; overflow-wrap: break-word; padding-right: 80px; margin-right: 60px;"> 
+      I am an
        <em>experienced</em>
        software developer residing in New York City.
        I have developed software systems for some of the most important corporations, and government agencies in the USA.
@@ -74,8 +75,7 @@
        <em>elegant and useful</em>
        web application for your company without
        breaking your bank, and in a timely fashion,
-       <em>guaranteed</em>
-       .
+       <em>guaranteed</em>.
       </p>
 
       {#      <ul style='padding-top: 17px !important;'>#}
@@ -98,7 +98,7 @@
            class = "li2h2 white-on-hover text-decoration: none;">Facebook
         </a>
         <ul>
-         <li class = "li2">Interesting, funny stuff
+         <li class = "li2">Interesting, funny stuff.
          </li>
         </ul>
        </li>
@@ -175,22 +175,23 @@
     <div class = "container-fluid">
 
      <div class = "col-md-6">
-      <div class = "left-content" id = "myTextContainer">
+      <div class = "left-content" id = "myTextContainer" style = "padding-right: 60px; margin-right: 40px;">
        <h2 style = 'padding-bottom: 9px; margin-bottom:0px;'>It's All About Me</h2>
        <br>
        <p>Degrees in software development and chemistry;</p>
        <p>> 20 years of experience in the software development trade;</p>
-       <p>web sites from 1,000 USD;</p>
-       <p>full-fledged eCommerce web applications, from 10,000 USD;</p>
-       <p>financing available.</p>
+       <p>Data-driven web sites from 1,000 USD;</p>
+       <p>Full-fledged eCommerce web applications from 10,000 USD;</p>
+       <p>Financing available.</p>
        <hr>
        <br>
       </div>
      </div>
 
      <div class = "col-md-6">
-      <div class = "right-image" style = "padding-right: 9%; margin-right: 9%;">
-       <img src = "{% static 'img/about_image.png' %}" alt = "" style = "width: 80%; height: auto;">
+      <div class = "right-image" style = "padding-right: 3%; margin-right: 3%;">
+       <img src = "{% static 'img/about_image.png' %}" alt = "" 
+       style = "width: 80%; height: 85%; border: 2px solid gray; border-radius: 9px; display: block; object-fit: cover; object-position: top;">
       </div>
      </div>
 
@@ -210,15 +211,17 @@
         <div class = "col-md-6">
          <div class = "left-content">
           <h2>Software is an art</h2>
-          <p>I believe that the beauty of software programs extends
+          <p style = "max-width: 100%; word-wrap: break-word; overflow-wrap: break-word; padding-right: 60px; margin-right: 40px;">
+          I believe that the beauty of software programs extends
            well beyond the objects one sees in the screens.
            Software code can, and should be created in beautiful,
            and elegant ways. Beauty is equal to truth.</p>
          </div>
         </div>
         <div class = "col-md-6">
-         <div class = "right-image" style = "padding-top: 19px;">
-          <img src = "{% static 'img/first_service.jpg' %}" alt = "">
+         <div class = "right-image" style = "padding-top: 19px; position: relative; left: -81px;">
+          <img src = "{% static 'img/first_service.jpg' %}" alt = "" 
+          style = "width: 80% !important; max-width: 80% !important; min-width: 0 !important; margin-right: 27px; border: 2px solid gray; border-radius: 9px;">
          </div>
         </div>
        </div>
@@ -234,14 +237,16 @@
 
         <div class = "col-md-6">
          <div class = "left-image" style = "cursor: pointer;" onclick = "showLightbox()">
-          <img src = "{% static 'img/2021-01-29.jpg' %}" alt = "Click to enlarge" style = "width: 80%; transition: transform 0.4s;">
+          <img src = "{% static 'img/2021-01-29.jpg' %}" alt = "Click to enlarge" 
+          style = "width: 80%; transition: transform 0.4s; border: 2px solid gray; border-radius: 9px;">
          </div>
         </div>
 
         <div class = "col-md-6">
-         <div class = "right-content">
+         <div class = "right-content" 
+         style = "margin-left: -30px; margin-right: 20px; padding-right: 20px; max-width: 100%; overflow-wrap: break-word;">
           <h2>Software is a science</h2>
-          <p>I always address computer programming as an engineering
+          <p style = "max-width: 100%; word-wrap: break-word; overflow-wrap: break-word; padding-right: 60px; margin-right: 40px; text-transform: none;">I always address computer programming as an engineering
            discipline. I take the time to design well before I
            write a single line of code.
            I use proven patterns that have been thoroughly validated
@@ -261,12 +266,15 @@
 
   <div class = "slide" id = "4">
    <div class = "content fourth-content">
-    <div class = "container-fluid">
+    <div class = "container-fluid" 
+    style = "max-width: 100vw; overflow-x: hidden; padding-right: 60px; padding-left: 30px; margin-right: 15px; margin-left: 0;">
+     <div class = "row" style = "margin-right: -15px; margin-left: 0;">
 
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/01-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/01-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>New Jersey Insurance Group</h2>
@@ -280,7 +288,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/02-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/02-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Ariba Software</h2>
@@ -294,7 +303,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/03-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/03-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Department of the Navy</h2>
@@ -308,7 +318,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/04-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/04-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Pfizer Pharmaceuticals</h2>
@@ -322,7 +333,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/05-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/05-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Verizon Wireless</h2>
@@ -336,7 +348,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/06-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/06-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Sparx Enterprise Architect</h2>
@@ -351,11 +364,12 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/07-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/07-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Walt Disney World</h2>
-          <p>Design and development of photographic moderation tool,
+          <p>Design and development of photographic moderation tool
            for all parks and cruises, worldwide.</p>
          </div>
         </div>
@@ -366,7 +380,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/08-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/08-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>State of Pennsylvania</h2>
@@ -380,7 +395,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/09-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/09-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Gotham Technologies</h2>
@@ -394,7 +410,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/10-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/10-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Time Warner Cable</h2>
@@ -408,7 +425,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/11-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/11-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Bank of America</h2>
@@ -422,7 +440,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/12-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/12-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Akimeka Defense</h2>
@@ -436,7 +455,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/13-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/13-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Advance Auto Parts</h2>
@@ -450,7 +470,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/14-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/14-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Live i Tech</h2>
@@ -464,7 +485,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/15-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/15-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Scheer Intelligence</h2>
@@ -478,7 +500,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/17-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/17-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Linked-In Referral</h2>
@@ -492,7 +515,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/18-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/18-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Compu-Mailing Systems</h2>
@@ -506,7 +530,8 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/20-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/20-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Udemy</h2>
@@ -520,15 +545,17 @@
      <div class = "col-md-4 col-sm-6">
       <div class = "item">
        <div class = "thumb">
-        <img src = "{% static 'img/portfolio/21-portfolio.jpg' %}" alt = "">
+        <img src = "{% static 'img/portfolio/21-portfolio.jpg' %}" alt = "" 
+        style = "border: 2px solid gray; border-radius: 9px;">
         <div class = "hover-effect">
          <div class = "hover-content">
           <h2>Udemy</h2>
-          <p>Python, Django, advanced eCommerce course completion certificates.</p>
+          <p>Python, Django, and advanced eCommerce course completion certificates.</p>
          </div>
         </div>
        </div>
       </div>
+     </div>
      </div>
     </div>
    </div>
@@ -543,21 +570,21 @@
        {% csrf_token %}
 
        <div class = "form-group row">
-        <label for = "id_name" class = "col-sm-2 col-form-label" style = "color: gray;">NAME</label>
+        <label for = "id_name" class = "col-sm-2 col-form-label" style = "color: gray; font-size: 1.11rem;">NAME</label>
         <div class = "col-sm-10">
          {{ form.name }}
         </div>
        </div>
 
        <div class = "form-group row">
-        <label for = "id_email" class = "col-sm-2 col-form-label" style = "color: gray;">EMAIL</label>
+        <label for = "id_email" class = "col-sm-2 col-form-label" style = "color: gray; font-size: 1.11rem;">EMAIL</label>        
         <div class = "col-sm-10">
          {{ form.email }}
         </div>
        </div>
 
        <div class = "form-group row">
-        <label for = "id_message" class = "col-sm-2 col-form-label" style = "color: gray;">MESSAGE</label>
+        <label for = "id_message" class = "col-sm-2 col-form-label" style = "color: gray; font-size: 1.11rem;">MESSAGE</label>
         <div class = "col-sm-10">
          {{ form.message }}
         </div>
@@ -582,7 +609,7 @@
  </div>
 
  <footer class = "scroll-footer">
-  {#  <p>v-four-May-</p>#}
+  <p style='font-size: 7px !important;'>Dec twenty-twenty-five</p>
  </footer>
 
  <script>

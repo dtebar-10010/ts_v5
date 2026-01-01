@@ -28,3 +28,313 @@
   max-height      : none;
  }
 }
+
+/* ============================================
+   LANDSCAPE ORIENTATION MEDIA QUERIES
+   ============================================ */
+
+/* Small Phones Landscape (iPhone SE, iPhone 8, etc.)
+   Typical: 568px - 667px width */
+@media only screen and (min-width : 568px) and (max-width : 667px) and (orientation : landscape) {
+ nav {
+  width  : 60px;
+  height : 65vh;
+  top    : 7.5vh;
+ }
+
+ nav .logo img {
+  max-width : 90%;
+  margin-bottom: 17px;
+ }
+
+ nav a {
+  padding   : 8px 8px;
+  font-size : 11px;
+ }
+
+ nav ul li i {
+  padding-bottom : 10px;
+  font-size      : 20px;
+ }
+
+ .slides .slide .content {
+  margin-left : 7px;
+  padding     : 15px;
+ }
+
+ .first-content .author-image img {
+  max-width : 120px;
+  margin-right: 33px;
+ }
+ .second-content p, hr{
+  margin-bottom: 2px;
+ }
+ .second-content hr{
+  margin-bottom: 3px;
+  margin-top: 3px;
+ }
+ .second-content .right-image img{
+  position: relative !important;
+  margin-top: -12px !important;
+  left: -45px !important;
+  max-width: 72% !important;
+  min-width: auto !important;
+ }
+ h2 {
+  font-size : 18px !important;
+ }
+
+ p, li {
+  font-size : 8px !important;
+ }
+
+ .left-image, .right-image {
+  padding : 11px !important;
+ }
+
+ .left-image img, .right-image img {
+  max-height : 250px;
+  width      : auto;
+ }
+}
+
+/* Medium Phones Landscape (iPhone 12, iPhone 13, Pixel 5, etc.)
+   Typical: 667px - 844px width */
+@media only screen and (min-width : 668px) and (max-width : 844px) and (orientation : landscape) {
+ nav {
+  width  : 70px;
+  height : 68vh;
+  top    : 16vh;
+ }
+
+ nav .logo img {
+  max-width : 95%;
+ }
+
+ nav a {
+  padding   : 9px 9px;
+  font-size : 12px;
+ }
+
+ nav ul li i {
+  padding-bottom : 12px;
+  font-size      : 22px;
+ }
+
+ .slides .slide .content {
+  margin-left : 80px;
+  padding     : 20px;
+ }
+
+ .first-content .author-image img {
+  max-width : 150px;
+ }
+
+ h2 {
+  font-size : 20px !important;
+ }
+
+ p, li {
+  font-size : 11px !important;
+ }
+
+ .left-image img, .right-image img {
+  max-height : 280px;
+  width      : auto;
+ }
+
+ .fourth-content .item {
+  margin : 8px;
+ }
+}
+
+/* Large Phones / Phablets Landscape (iPhone 14 Pro Max, Galaxy S21+, etc.)
+   Typical: 844px - 926px width */
+@media only screen and (min-width : 845px) and (max-width : 926px) and (orientation : landscape) {
+ nav {
+  width  : 75px;
+  height : 70vh;
+  top    : 15vh;
+ }
+
+ nav a {
+  padding   : 10px 10px;
+  font-size : 13px;
+ }
+
+ nav ul li i {
+  padding-bottom : 13px;
+  font-size      : 24px;
+ }
+
+ .slides .slide .content {
+  margin-left : 90px;
+  padding     : 25px;
+ }
+
+ .first-content .author-image img {
+  max-width : 180px;
+ }
+
+ h2 {
+  font-size : 22px !important;
+ }
+
+ p, li {
+  font-size : 12px !important;
+ }
+
+ .left-image img, .right-image img {
+  max-height : 300px;
+  width      : auto;
+ }
+
+ .fourth-content .item {
+  margin : 10px;
+ }
+
+ .fifth-content input,
+ .fifth-content textarea {
+  font-size : 12px;
+ }
+}
+
+/* Small Tablets Landscape (iPad Mini, iPad, etc.)
+   Typical: 1024px - 1112px width */
+@media only screen and (min-width : 1024px) and (max-width : 1112px) and (orientation : landscape) {
+ nav {
+  width  : 80px;
+  height : 72vh;
+  top    : 14vh;
+ }
+
+ nav ul {
+  height : 46vh;
+ }
+
+ nav ul li i {
+  padding-bottom : 15px;
+  font-size      : 26px;
+ }
+
+ .slides .slide .content {
+  margin-left : 100px;
+  padding     : 30px;
+ }
+
+ .first-content .author-image img {
+  max-width : 200px;
+ }
+
+ h2 {
+  font-size : 24px !important;
+ }
+
+ p, li {
+  font-size : 13px !important;
+ }
+
+ .left-image img, .right-image img {
+  max-height : 350px;
+  width      : auto;
+ }
+
+ .fourth-content .container-fluid .col-md-4 {
+  width : 33.33%;
+ }
+
+ .fourth-content .item {
+  margin : 12px;
+ }
+
+ .fifth-content input {
+  height      : 45px;
+  line-height : 45px;
+  font-size   : 14px;
+ }
+
+ .fifth-content textarea {
+  height     : 150px;
+  max-height : 150px;
+  font-size  : 14px;
+ }
+}
+
+/* Large Tablets Landscape (iPad Pro 11", iPad Pro 12.9", etc.)
+   Typical: 1112px - 1400px width */
+@media only screen and (min-width : 1113px) and (max-width : 1400px) and (orientation : landscape) {
+ nav {
+  width  : 81px;
+  height : 72vh;
+  top    : 9vh;
+ }
+
+ nav ul {
+  height : 48vh;
+ }
+
+ nav ul li i {
+  font-size : 27px;
+ }
+
+ .slides .slide .content {
+  margin-left : 110px;
+  padding     : 35px;
+ }
+
+ .first-content .author-image img {
+  max-width : 220px;
+ }
+
+ h2 {
+  font-size : 26px !important;
+ }
+
+ p, li {
+  font-size : 14px !important;
+ }
+
+ .left-image img, .right-image img {
+  max-height : 400px;
+  width      : auto;
+ }
+
+ .fourth-content .item {
+  margin : 15px;
+ }
+
+ .fourth-content .item .hover-effect h2 {
+  font-size : 20px;
+ }
+
+ .fourth-content .item .hover-effect p {
+  font-size : 13px;
+ }
+
+ .fifth-content button {
+  font-size : 13px;
+  padding   : 10px 18px;
+ }
+}
+
+/* Extra Wide Landscape (Desktop monitors, large tablets)
+   Typical: 1400px+ width */
+@media only screen and (min-width : 1401px) and (orientation : landscape) {
+ .slides .slide .content {
+  max-width   : 1600px;
+  margin-left : 120px;
+  margin-right: auto;
+ }
+
+ .fourth-content .item {
+  margin : 18px;
+ }
+
+ nav {
+  width : 81px;
+ }
+
+ nav ul li i {
+  font-size : 28px;
+ }
+}

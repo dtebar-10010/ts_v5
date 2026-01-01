@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap');
+
 @font-face {
  font-family : 'PigpenCipher';
  src         : url('../fonts/pigpencipher/PigpenCipher.ttf');
@@ -7,7 +9,7 @@
 * {
  -webkit-box-sizing : border-box;
  box-sizing         : border-box;
- font-family        : 'Open Sans', sans-serif;
+ font-family        : 'Saira', sans-serif;
  margin             : 0;
  padding            : 0;
 }
@@ -29,9 +31,8 @@ html {
 
 li, p, ul {
  color          : lightgray;
- font-size      : 1.2em;
+ font-size      : 1.00rem;
  line-height    : 1.5;
- text-transform : uppercase;
 }
 
 nav {
@@ -346,7 +347,7 @@ ul li a:visited {
 
 .first-content {
  overflow-x : hidden;
- padding    : 2%;
+ padding    : 3%;
  text-align : left;
 }
 
@@ -417,12 +418,13 @@ ul li a:visited {
 
 .first-content p {
  color          : whitesmoke;
- font-size      : 11px;
+ font-size      : 14px !important;
  font-weight    : 300;
  letter-spacing : 1px;
  line-height    : 17px;
  margin-bottom  : 20px;
- text-transform : uppercase;
+ margin-right  : 30px;
+ padding-right  : 30px;
 }
 
 .first-content {
@@ -509,7 +511,7 @@ ul li a:visited {
  border-bottom  : 1px solid gray;
  color          : gray;
  display        : inline-block;
- font-size      : 14px;
+ font-size      : 11px !important;
  font-weight    : 500;
  letter-spacing : 1px;
  margin-bottom  : 7px;
@@ -519,9 +521,9 @@ ul li a:visited {
 }
 
 .fourth-content .item .hover-effect p {
- font-size      : 11px;
+ font-size      : 5.5px !important;
  letter-spacing : 1px;
- line-height    : 13px;
+ line-height    : 6.5px;
  margin-bottom  : 0px;
  padding-bottom : 0px;
  text-transform : uppercase;
@@ -549,7 +551,6 @@ ul li a:visited {
  letter-spacing : 1px;
  line-height    : 17px;
  margin-bottom  : 20px;
- text-transform : uppercase;
 }
 
 .main-btn a:hover {
@@ -617,14 +618,13 @@ ul li a:visited {
 }
 
 .second-content .right-image img {
- float          : right;
- margin-top     : 3%;
- padding-right  : 3%;
- padding-bottom : 5%;
- max-width      : 100%;
- min-width      : 100%;
+ position       : relative !important;
+ right          : 15px !important;
+ margin-top     : 8%;
+ max-width      : 89%;
+ min-width      : 89%;
  overflow-x     : hidden;
- border-radius  : 30px;
+ border-radius  : 21px;
 }
 
 .third-content .left-image img {
@@ -656,7 +656,6 @@ ul li a:visited {
  letter-spacing : 1px;
  line-height    : 17px;
  margin-bottom  : 20px;
- text-transform : uppercase;
 }
 
 .slides {
@@ -808,7 +807,6 @@ ul li a:visited {
  letter-spacing : 1px;
  line-height    : 17px;
  margin-bottom  : 20px;
- text-transform : uppercase;
 }
 
 .white-on-hover:hover {
