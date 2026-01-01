@@ -1,0 +1,12 @@
+# Linguist language detection overrides
+*.py linguist-detectable=true
+*.js linguist-detectable=true
+*.css linguist-detectable=true
+*.html linguist-detectable=true
+
+# Exclude vendored/generated code from language stats
+ts_v5_venv/** linguist-vendored
+staticfiles/** linguist-vendored
+
+# Mark documentation
+*.md linguist-documentation
