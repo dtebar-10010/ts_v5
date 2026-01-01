@@ -4,9 +4,19 @@
 # Exclude vendored/generated code from language stats
 ts_v5_venv/** linguist-vendored
 staticfiles/** linguist-vendored
-ts_v5_app/static/js/vendor/** linguist-vendored
-ts_v5_app/static/css/bootstrap*.css linguist-vendored
+
+# Vendor JavaScript libraries
+ts_v5_app/static/js/vendor/* linguist-vendored
+
+# Vendor CSS frameworks
+ts_v5_app/static/css/bootstrap-theme.css linguist-vendored
+ts_v5_app/static/css/bootstrap-theme.min.css linguist-vendored
+ts_v5_app/static/css/bootstrap.css linguist-vendored
+ts_v5_app/static/css/bootstrap.min.css linguist-vendored
 ts_v5_app/static/css/fontAwesome.css linguist-vendored
+ts_v5_app/static/css/light-box.css linguist-vendored
+
+# Vendor fonts
 ts_v5_app/static/fonts/** linguist-vendored
 
 # Mark documentation
